@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --main-color: rgb(8, 32, 50) ;
+    --second-color: rgb(51, 71, 86);
+    --third-color: rgb(0, 0, 0) ;
+    --text-color: rgb(240, 165, 0) ;
+}
+body{
+    background: var(--main-color);
+}
+*{
+    font-family: Roboto;
+    color: var(--text-color);
+    margin: 0;
+}
+/*____________Estate__________*/
+#main-estate{
+    width: 100vw;
+    font-size: 16px;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--second-color);
+}
+#estate-section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+}
+#estate-section2,#estate-section3,#estate-section4{
+    width: 25vw;
+}
+
+#logo-img{
+    height: 60px;
+    width: auto;
+    margin: 5px 20px ;
+}
+
+/*____________Nav ___________*/
+#nav-menu{
+    height: 5vh;
+    border-top: black 2px solid;
+    background: var(--second-color);
+}
+    
+.nav-btn{
+    height: 100%;
+    font-size: 14px;
+    border-radius: none;
+    margin: none;
+    background: var(--second-color);
+    border:none;
+    padding: 15px;
+}
+.nav-btn:hover{
+    background: black;
+}
+#jogging-btn{
+    background: var(--main-color);
+}
+/*____________Jog Menu___________*/
+#jogging-menu{
+    width: 100vw;
+    display: flex;
+    border-bottom: black 3px solid;
+}
+/*----------------Setup-----------*/
+#jogging-setup{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-right: black 3px solid;
+}
+#jogging-setup h3{
+    text-align: center;
+    margin: 10px 0;
+}
+#jogging-setup label{
+    margin: 15px 10px;
+}
+.select-setup{
+    width: 80%;
+    margin: auto;
+    background: var(--second-color);
+}
+.input-setup{
+    width: 20%;
+    margin: auto;
+    background: var(--second-color);
+}
+/*----------------Increment-----------*/
+#jogging-increment{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-right: black 3px solid;
+}
+#jogging-increment h3{
+    margin: 10px;
+}
+.increment-div{
+    margin-bottom: 15px;
+}
+.increment-btn{
+    width: 45px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 20px ;
+    margin-right: 20px;
+    background: var(--second-color);
+    border: black 2px solid;
+}
+.increment-btn:hover{
+    background: gray;
+}
+/*----------------Position-----------*/
+#position-info{
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    border: none;
+}
+#position-info p{
+    display: inline;
+}
+#position-info h3{
+    text-align: center;
+    margin: 10px;
+}
+.pos-info-div{
+    margin: 15px 0;
+    margin-left: 15px;
+}

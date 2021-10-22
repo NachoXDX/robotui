@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- ___________Main State___________ -->
+    <div id="main-estate">
+        <div id="estate-section1">
+            <img id="logo-img" src="/b.png" alt="logo">
+        </div>
+        <div id="estate-section2">
+            <p id="motor-state">Motores On</p>
+            <p id="speed-state">Velocidad 85%</p>
+            <p id="mode-state">Manual</p>
+        </div>
+        <div id="estate-section3">
+            <p>lorem ipsum</p>
+            <p>Dolom quorem</p>
+            <p>Ipsum tamtrum</p>
+        </div>
+        <div id="estate-section4">
+            <p>lorem ipsum</p>
+            <p>Dolom quorem</p>
+            <p>Ipsum tamtrum</p>
+        </div>
+    </div>
+
+    <!-- ______Nav Menu______ -->
+    <div id="nav-menu">
+        <button id="jogging-btn" class="nav-btn">Jogging</button>
+        <button id="setup-btn" class="nav-btn">Setup</button>
+        <button id="tools-menus-btn" class="nav-btn">Tools Menu</button>
+    </div>
+    <!-- _________Jogging Menu________ -->
+    <div id="jogging-menu">
+
+        <!-- -----------Jogging Setup----------- -->
+        <div id="jogging-setup">
+                <h3>Setup</h3>
+            <label class = "jog-setup-label" for="cord-sys">Coordenadas</label>
+            <select class="select-setup" name="cord" id="cord-sys">
+                <option value="globales">Globales</option>
+                <option value="usuario1">Usuario 1</option>
+                <option value="usuario2">Usuario 2</option>
+            </select>
+            <label class = "jog-setup-label" for="mode">Modo</label>
+            <select class="select-setup" name="mode" id="mode">
+                <option value="espacial">Espacial</option>
+                <option value="articular">Articular</option>
+            </select>
+            <label class = "jog-setup-label" for="tool">Herramienta</label>
+            <select class="select-setup" name="tool" id="tool">
+                <option value="tool0">Tool 0</option>
+                <option value="tool1">Tool 1</option>
+            </select>
+            <label class = "jog-setup-label" for="step">Paso</label>
+                <input class="input-setup" id="step" type="number">
+            <button onclick="stepMod()"></button>    
+        </div>
+         <!-- -----------Jogging Increment----------- -->
+        <div id="jogging-increment">
+            <h3>Move</h3>
+            <div class="increment-div" id="increment-x">
+                <button onclick='increment("x-position")'class="increment-btn">-</button>
+                <span>&nbsp;X&nbsp;</span>
+                <button class="increment-btn">+</button>
+            </div>
+            <div class="increment-div"  id="increment-y">
+                <button class="increment-btn">-</button>
+                <span>&nbsp;Y&nbsp;</span>
+                <button class="increment-btn">+</button> 
+            </div>            
+            <div class="increment-div"  id="increment-z">
+                <button class="increment-btn">-</button>
+                <span>&nbsp;Z&nbsp;</span>
+                <button class="increment-btn">+</button>
+            </div>
+            <div class="increment-div"  id="increment-e1">
+                <button class="increment-btn">-</button>
+                <span>e1</span>
+                <button class="increment-btn">+</button>
+            </div>
+            <div class="increment-div"  id="increment-e2">
+                <button class="increment-btn">-</button>
+                <span>e2</span>
+                <button class="increment-btn">+</button>
+            </div>
+            <div class="increment-div"  id="increment-e3">
+                <button class="increment-btn">-</button>
+                <span>e3</span>
+                <button class="increment-btn">+</button>
+            </div>
+        </div>
+         <!-- -----------Jogging Info----------- -->
+        <div id="position-info">
+            <h3>Position</h3>
+            <div class = "pos-info-div" id="x-pos-info">
+                <p>X </p>
+                <p id="x-postion">0.00</p>
+            </div>
+            <div class = "pos-info-div" id="y-pos-info">
+                <p>Y</p>
+                <p>0.00</p>
+            </div>
+            <div class = "pos-info-div" id="z-pos-info">
+                <p>Z</p>
+                <p>0.00</p>
+            </div>
+            <div class = "pos-info-div"id="e1-pos-info">
+                <p>e1</p>
+                <p>0.00</p>
+            </div>
+            <div class = "pos-info-div" id="e2-pos-info">
+                <p>e2</p>
+                <p>0.00</p>
+            </div>
+            <div class = "pos-info-div" id="e3-pos-info">
+                <p>e3</p>
+                <p>0.00</p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
